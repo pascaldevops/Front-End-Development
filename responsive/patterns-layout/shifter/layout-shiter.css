@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.box {
+  min-height: 150px;
+}
+
+.dark_magenta {
+  background-color: darkmagenta;
+}
+
+.dark_blue {
+  background-color: #2a457a;
+  color: #efefef;
+  order: 1;
+}
+
+.light_blue {
+  background-color: #099dd9;
+  order: 2;
+}
+
+.green {
+  background-color: #0c8542;
+  order: 3;
+}
+
+.lime {
+  background-color: rgb(179, 210, 52);
+}
+
+.seafoam {
+  background-color: rgb(77, 190, 161);
+}
+
+.red {
+  background-color: #ec1d3b;
+  order: 4;
+}
+
+.orange {
+  background-color: #f79420;
+  order: 5;
+}
+/*
+      These are the responsive styles. Throw some breakpoints in here!
+      */
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  #container2 {
+    width: 50%;
+    order: 2;
+  }
+
+  .dark_blue {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dark_blue {
+    width: 25%;
+    order: 3;
+  }
+
+  #container2 {
+    width: 50%;
+  }
+
+  .red {
+    width: 25%;
+    order: 1;
+  }
+}
+
+/* @media screen and (min-width: 550px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
